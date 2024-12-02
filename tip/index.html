@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image"><img src="./../images/logo.svg"></div>
+        <div class="main">
+            <section class="section">
+                <form action="#">
+                    <div class="form-item">
+                        <label>Bill</label>
+                        <p id="top">this field is required</p>
+                    <div> 
+                        <input id="inputfir" class="input" type="number" placeholder="0">
+                        <img class="icon" src="./../images/icon-dollar.svg">
+                    </div>
+
+                    </div>
+                    <div class="tip-con">
+                        <label>Select Tip %</label>
+                        <ul class="tips">
+                            <li ><button onclick="getTipPercent(5)" class="tip">5%</button></li>
+                            <li ><button onclick="getTipPercent(10)" class="tip">10%</button></li>
+                            <li><button onclick="getTipPercent(15)" class="tip">15%</button></li>
+                            <li ><button onclick="getTipPercent(25)" class="tip">25%</button></li>
+                            <li ><button onclick="getTipPercent(50)" class="tip">50%</button></li>
+                            <li><input class="tip" type="number" placeholder="Custom"></li>
+                        </ul>                     
+                    </div>
+                    <div class="form-item">
+                        <label>Number of People</label>
+                        <p id="bottom">can't be zero</p>                  
+                        <div>
+                            <input id="inputsec" class="input" type="number" placeholder="0">
+                            <img class="icon" src="./../images/icon-dollar.svg">
+                        </div>   
+                    </div>
+                </form>
+            </section>
+            <section class="right-con">
+                <div class="right">
+                    <div class="bb">
+                        <div class="amount bot">
+                            <p> Tip Amount<br><span>/person</span></p>
+                            <h1 id="money">$0.00</h1>
+                        </div>
+                        <div class="amount">
+                            <p> Total<br><span>/person</span></p>
+                            <h1 id="moneys">$0.00</h1>
+                        </div>
+                    </div>
+                    
+                    <div><button id="reset">reset</button></div>
+                </div>
+            </section>
+            
+
+        </div>
+    </div>
+    
+<script src="./app.js"></script>
+</body>
+</html>
